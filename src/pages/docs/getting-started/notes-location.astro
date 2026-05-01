@@ -1,0 +1,24 @@
+---
+import DocsLayout from "@/layouts/DocsLayout.astro";
+---
+
+<DocsLayout title="Notes Location">
+  <h1>Notes location</h1>
+  <p class="muted">
+    Writr is local-first. Notes are stored as real files on disk (not a proprietary database).
+  </p>
+
+  <h2>Default vault</h2>
+  <p>
+    By default, your notes root directory is:
+  </p>
+  <pre><code>~/Writr</code></pre>
+
+  <h2>What’s inside</h2>
+  <ul>
+    <li><code>*.md</code> notes</li>
+    <li><code>*.canvas</code> canvas files (JSON)</li>
+    <li><code>image/</code> imported images (e.g. <code>~/Writr/image/...</code>)</li>
+  </ul>
+</DocsLayout>
+

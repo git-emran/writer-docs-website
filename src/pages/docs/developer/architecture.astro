@@ -1,0 +1,15 @@
+---
+import DocsLayout from "@/layouts/DocsLayout.astro";
+---
+
+<DocsLayout title="Architecture">
+  <h1>Architecture</h1>
+  <p class="muted">High-level map for contributors.</p>
+
+  <ul>
+    <li><strong>Electron main process:</strong> filesystem access, exports, optional AI, terminal sessions.</li>
+    <li><strong>Renderer:</strong> React UI, CodeMirror editor, Canvas (React Flow), Terminal (xterm.js).</li>
+    <li><strong>Shared types:</strong> common types in <code>src/shared</code>.</li>
+  </ul>
+</DocsLayout>
+

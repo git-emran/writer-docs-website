@@ -1,0 +1,279 @@
+---
+import SiteLayout from "@/layouts/SiteLayout.astro";
+import { siteConfig } from "@/lib/site";
+---
+
+<SiteLayout title="Local-first Markdown notes">
+  <section class="hero">
+    <div class="container inner">
+      <div class="pill muted">
+        <span>Desktop app · Electron + React + TypeScript</span>
+        <span aria-hidden="true">•</span>
+        <span>Notes are real files</span>
+      </div>
+
+      <h1>
+        Local-first Markdown notes with Obsidian-like editing, plus Canvas, Kanban, and an embedded
+        Terminal.
+      </h1>
+
+      <p class="muted sub">
+        Writr keeps your notes as plain files under <code>~/Writr</code>. Write fast with Live
+        Preview, preview or export to PDF, and organize work without leaving your notes workspace.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="/docs/getting-started/installation">Read docs</a>
+        <a class="btn" href={siteConfig.downloadUrl}>Download (macOS)</a>
+      </div>
+
+      <figure class="heroMedia">
+        <div class="media">
+          <img
+            src="/assets/hero.png"
+            width="1600"
+            height="1000"
+            loading="eager"
+            decoding="async"
+            alt="Writr editor showing file explorer and Markdown content"
+          />
+        </div>
+        <figcaption class="muted">Live Preview editor with file explorer and note metadata.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2 class="sectionTitle">Why Writr</h2>
+    <div class="prose">
+      <p class="muted">
+        Writr is a lightweight desktop Markdown app that stores notes as plain files under
+        <code>~/Writr</code>. The editor is optimized for fast writing: Live Preview renders Markdown
+        inline when you move away from a line, while keeping the line you’re editing as raw text.
+      </p>
+      <ul class="muted">
+        <li><strong>Local-first:</strong> your notes are real files on disk.</li>
+        <li><strong>Organize beyond docs:</strong> Canvas for spatial thinking, Kanban for tasks.</li>
+        <li><strong>Practical exports:</strong> export notes and canvases to PDF.</li>
+        <li><strong>Customizable:</strong> theme, fonts, Vim mode, wrapping, line numbers.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2 class="sectionTitle">Feature highlights</h2>
+    <div class="grid featureList">
+      <div class="card">
+        <h3 class="featTitle">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path d="M2.75 2.5A1.25 1.25 0 0 0 1.5 3.75v8.5A1.25 1.25 0 0 0 2.75 13.5h10.5A1.25 1.25 0 0 0 14.5 12.25v-6.5A1.25 1.25 0 0 0 13.25 4.5H8.8L7.5 3.1A1.25 1.25 0 0 0 6.6 2.5H2.75Z"/>
+            </svg>
+          </span>
+          Editor + Live Preview
+        </h3>
+        <p class="muted small">CodeMirror-based editor with inline rendering behavior inspired by Obsidian.</p>
+      </div>
+      <div class="card">
+        <h3 class="featTitle">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path d="M2.5 3.75A1.25 1.25 0 0 1 3.75 2.5h8.5A1.25 1.25 0 0 1 13.5 3.75v8.5a1.25 1.25 0 0 1-1.25 1.25h-8.5A1.25 1.25 0 0 1 2.5 12.25v-8.5Zm3.25.25a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5ZM5 7.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5A.75.75 0 0 1 5 7.25ZM5.75 9a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z"/>
+            </svg>
+          </span>
+          Preview + split view
+        </h3>
+        <p class="muted small">Full preview and side-by-side split view with scroll sync.</p>
+      </div>
+      <div class="card">
+        <h3 class="featTitle">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path d="M2.75 2.5A1.25 1.25 0 0 0 1.5 3.75v8.5A1.25 1.25 0 0 0 2.75 13.5h10.5A1.25 1.25 0 0 0 14.5 12.25v-8.5A1.25 1.25 0 0 0 13.25 2.5H2.75Zm.25 1.25a.25.25 0 0 1 .25-.25h2.5v9H3.25a.25.25 0 0 1-.25-.25v-8.5Zm3.75-.25h6.5a.25.25 0 0 1 .25.25v8.5a.25.25 0 0 1-.25.25h-6.5v-9Z"/>
+            </svg>
+          </span>
+          Canvas, Kanban, Terminal
+        </h3>
+        <p class="muted small">Canvas files in your vault, Kanban boards in local storage, and a real shell tab.</p>
+      </div>
+      <div class="card">
+        <h3 class="featTitle">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <path d="M4.75 1.5A1.25 1.25 0 0 0 3.5 2.75v10.5c0 .69.56 1.25 1.25 1.25h6.5c.69 0 1.25-.56 1.25-1.25V5.75a1.25 1.25 0 0 0-.366-.884L9.634 2.366A1.25 1.25 0 0 0 8.75 2h-4Zm0 1.5h3.5v2.25c0 .69.56 1.25 1.25 1.25H11v6.75a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25V2.75a.25.25 0 0 1 .25-.25Z"/>
+            </svg>
+          </span>
+          Export to PDF
+        </h3>
+        <p class="muted small">Export Markdown notes and canvases to PDF.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2 class="sectionTitle">FAQ</h2>
+    <div class="faq">
+      <details class="faqItem">
+        <summary>Where are my notes stored?</summary>
+        <div class="faqBody muted tiny">By default, in <code>~/Writr</code> as normal files.</div>
+      </details>
+      <details class="faqItem">
+        <summary>Is there any cloud sync?</summary>
+        <div class="faqBody muted tiny">
+          No forced cloud. Use iCloud/Dropbox/Git/your preferred sync if you want.
+        </div>
+      </details>
+      <details class="faqItem">
+        <summary>Does it run on Windows/Linux?</summary>
+        <div class="faqBody muted tiny">
+          Currently distributed as macOS-only, but build scripts exist for other platforms.
+        </div>
+      </details>
+      <details class="faqItem">
+        <summary>Can I export to PDF?</summary>
+        <div class="faqBody muted tiny">Yes—export notes and canvases to PDF.</div>
+      </details>
+    </div>
+  </section>
+</SiteLayout>
+
+<script is:inline>
+  // Accordion behavior: keep only one FAQ open at a time.
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = Array.from(document.querySelectorAll("details.faqItem"));
+    for (const item of items) {
+      item.addEventListener("toggle", () => {
+        if (!item.open) return;
+        for (const other of items) {
+          if (other !== item) other.open = false;
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  .hero {
+    padding: 56px 0 10px;
+  }
+  .inner {
+    display: grid;
+    gap: 16px;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(38px, 4.6vw, 54px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+  .sub {
+    max-width: 70ch;
+    font-size: 16px;
+  }
+  .cta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+  }
+  .heroMedia {
+    margin: 14px 0 0;
+  }
+  .media {
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+  }
+  .heroMedia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .heroMedia figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .section {
+    padding: 32px 0 0;
+  }
+  .sectionTitle {
+    font-size: 22px;
+    margin: 0 0 14px;
+  }
+  .prose {
+    max-width: 80ch;
+  }
+  .prose ul {
+    margin: 12px 0 0;
+    padding-left: 18px;
+  }
+  .featureList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .faq {
+    max-width: 80ch;
+    display: grid;
+    gap: 10px;
+  }
+  .faqItem {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 10px 12px;
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  .faqBody {
+    margin-top: 8px;
+  }
+  .featTitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 6px;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-2);
+    color: var(--muted);
+    flex: 0 0 auto;
+  }
+  .small {
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 0;
+  }
+  .tiny {
+    font-size: 12.5px;
+    line-height: 1.45;
+    margin: 6px 0 0;
+  }
+  .privacy ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+  }
+  @media (max-width: 860px) {
+    .featureList {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

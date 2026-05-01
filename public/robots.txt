@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://writr.app/sitemap-index.xml
+

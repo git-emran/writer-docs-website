@@ -1,0 +1,49 @@
+---
+import { siteConfig } from "@/lib/site";
+---
+
+<footer class="footer">
+  <div class="container inner">
+    <div class="left">
+      <div class="brand">{siteConfig.name}</div>
+      <div class="muted">Local-first notes. Your files, your machine.</div>
+    </div>
+    <div class="right">
+      <a class="muted" href="/docs">Docs</a>
+      <a class="muted" href="/about">About</a>
+      <a class="muted" href="/changelog">Changelog</a>
+      <a class="muted" href={siteConfig.repoUrl} target="_blank" rel="noreferrer">Repo</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--border);
+    margin-top: 64px;
+    padding: 28px 0;
+    background: var(--surface);
+  }
+  .inner {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .brand {
+    font-weight: 800;
+  }
+  .left {
+    display: grid;
+    gap: 6px;
+  }
+  .right {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .right a:hover {
+    color: var(--text);
+  }
+</style>

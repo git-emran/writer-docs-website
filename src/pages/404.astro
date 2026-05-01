@@ -1,0 +1,32 @@
+---
+import SiteLayout from "@/layouts/SiteLayout.astro";
+---
+
+<SiteLayout title="Page not found">
+  <div class="container page">
+    <h1>404</h1>
+    <p class="muted">That page doesn’t exist.</p>
+    <div class="actions">
+      <a class="btn primary" href="/">Go home</a>
+      <a class="btn" href="/docs">Open docs</a>
+    </div>
+  </div>
+</SiteLayout>
+
+<style>
+  .page {
+    padding: 56px 0;
+  }
+  h1 {
+    margin: 0 0 10px;
+    font-size: 42px;
+    letter-spacing: -0.02em;
+  }
+  .actions {
+    margin-top: 18px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+</style>
+

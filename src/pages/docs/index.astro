@@ -1,0 +1,35 @@
+---
+import DocsLayout from "@/layouts/DocsLayout.astro";
+---
+
+<DocsLayout title="Docs">
+  <h1>Documentation</h1>
+  <p class="muted">
+    Start here to install Writr, learn the editor workflow, and understand how your data is stored.
+  </p>
+  <div class="grid">
+    <a class="card link" href="/docs/getting-started/installation">
+      <h2>Getting started</h2>
+      <p class="muted">Install on macOS, find your notes, and learn navigation basics.</p>
+    </a>
+    <a class="card link" href="/docs/editor/live-preview">
+      <h2>Live Preview</h2>
+      <p class="muted">Obsidian-like inline rendering with an active editing line.</p>
+    </a>
+    <a class="card link" href="/docs/shortcuts">
+      <h2>Keyboard shortcuts</h2>
+      <p class="muted">A cheat sheet for editor actions and the command palette.</p>
+    </a>
+  </div>
+</DocsLayout>
+
+<style>
+  .link:hover {
+    border-color: rgba(102, 227, 255, 0.45);
+  }
+  .link h2 {
+    margin: 0 0 4px;
+    font-size: 18px;
+  }
+</style>
+

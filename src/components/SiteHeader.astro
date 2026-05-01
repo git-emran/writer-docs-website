@@ -1,0 +1,73 @@
+---
+const nav = [
+  { label: "Docs", href: "/docs" },
+  { label: "About", href: "/about" },
+  { label: "Changelog", href: "/changelog" }
+];
+---
+
+<header class="header">
+  <div class="container inner">
+    <a class="brand" href="/">
+      <img class="logo" src="/icon.png" width="28" height="28" alt="Writr" />
+      <span>Writr</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      {nav.map((item) => (
+        <a class="navLink" href={item.href}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+  }
+  .logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .navLink {
+    color: var(--muted);
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+  .navLink:hover {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+  @media (max-width: 560px) {
+    .nav {
+      gap: 8px;
+    }
+  }
+</style>

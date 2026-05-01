@@ -1,0 +1,47 @@
+---
+import DocsLayout from "@/layouts/DocsLayout.astro";
+---
+
+<DocsLayout title="Keyboard Shortcuts">
+  <h1>Keyboard shortcuts</h1>
+  <p class="muted">Editor shortcuts (when the editor is focused).</p>
+
+  <div class="shortcuts">
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">B</span></span><span class="muted">Bold</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">I</span></span><span class="muted">Italic</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">K</span></span><span class="muted">Link</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">`</span></span><span class="muted">Inline code</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">`</span></span><span class="muted">Fenced code block</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">Q</span></span><span class="muted">Blockquote</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">L</span></span><span class="muted">Bullet list</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">L</span></span><span class="muted">Numbered list</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">T</span></span><span class="muted">Task checkbox</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">H</span></span><span class="muted">Horizontal rule</span></div>
+    <div class="row"><span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">D</span></span><span class="muted">Strikethrough</span></div>
+  </div>
+
+  <h2>Command palette</h2>
+  <div class="row">
+    <span><span class="kbd">Cmd/Ctrl</span> + <span class="kbd">P</span></span>
+    <span class="muted">Open command palette</span>
+  </div>
+
+  <style>
+    .shortcuts {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+  </style>
+</DocsLayout>
+

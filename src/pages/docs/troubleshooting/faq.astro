@@ -1,0 +1,31 @@
+---
+import DocsLayout from "@/layouts/DocsLayout.astro";
+---
+
+<DocsLayout title="FAQ">
+  <h1>FAQ</h1>
+
+  <h2>Where are my notes stored?</h2>
+  <p class="muted">By default, in <code>~/Writr</code> as plain files.</p>
+
+  <h2>How do I back up or sync?</h2>
+  <p class="muted">
+    Because your notes are files, you can use Time Machine, iCloud, Dropbox, Git, or any sync tool you trust.
+  </p>
+
+  <h2>Why can’t I save outside the root folder?</h2>
+  <p class="muted">
+    File operations are restricted to the notes root directory to prevent accidental edits outside your vault.
+  </p>
+
+  <h2>How do images work?</h2>
+  <p class="muted">
+    Drag & drop copies images into <code>~/Writr/image/</code> and inserts embeds like <code>![[image/&lt;file&gt;]]</code>.
+  </p>
+
+  <h2>AI troubleshooting</h2>
+  <p class="muted">
+    AI writing is optional and requires a user-provided OpenRouter API key stored locally.
+  </p>
+</DocsLayout>
+

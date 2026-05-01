@@ -1,0 +1,28 @@
+---
+import DocsLayout from "@/layouts/DocsLayout.astro";
+---
+
+<DocsLayout title="Live Preview">
+  <h1>Live Preview</h1>
+  <p class="muted">
+    Live Preview is Obsidian-like inline rendering: the line you are editing stays raw Markdown, and
+    other lines render inline when you move away.
+  </p>
+
+  <h2>Behavior</h2>
+  <ul>
+    <li>Active line: raw Markdown syntax remains visible.</li>
+    <li>Inactive lines: Markdown markers are hidden/replaced with styled equivalents.</li>
+    <li>Efficient rendering: updates are viewport-based.</li>
+  </ul>
+
+  <h2>What renders inline</h2>
+  <ul>
+    <li>Headings, emphasis, strikethrough, inline code</li>
+    <li>Blockquotes, lists, links, horizontal rules</li>
+    <li>Fenced code blocks (fences hidden when not active)</li>
+    <li>Task lists (checkboxes when not active)</li>
+    <li>Images (renders inline and hides syntax when not active)</li>
+  </ul>
+</DocsLayout>
+
