@@ -66,59 +66,76 @@ const pageTitle = title ?? currentItem?.title ?? "Docs";
     position: sticky;
     top: 84px;
     height: calc(100dvh - 110px);
-    overflow: auto;
     border: 1px solid var(--border);
     background: var(--surface);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    overflow: hidden;
   }
 
   .sidebarInner {
-    padding: 16px;
+    padding: 8px 10px 10px;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .sidebarInner::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 
   .sidebarTitle {
-    font-weight: 900;
-    margin-bottom: 10px;
-    letter-spacing: 0.2px;
+    font-weight: 750;
+    margin: 6px 6px 10px;
+    letter-spacing: -0.01em;
+    color: var(--muted);
+    font-size: 13px;
   }
 
   .section {
-    margin-top: 14px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .section:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .sectionTitle {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
+    font-size: 12px;
+    text-transform: none;
+    letter-spacing: -0.01em;
     color: var(--muted);
-    margin-bottom: 8px;
+    margin: 0 6px 8px;
+    font-weight: 650;
   }
 
   .items {
     display: grid;
-    gap: 4px;
+    gap: 1px;
   }
 
   .item {
-    padding: 6px 8px;
-    border-radius: 10px;
+    padding: 8px 10px;
+    border-radius: 14px;
     border: 1px solid transparent;
-    color: var(--muted);
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 1.25;
+    color: color-mix(in oklab, var(--text) 86%, var(--muted));
+    font-weight: 650;
+    font-size: 14px;
+    line-height: 1.2;
   }
 
   .item:hover {
     color: var(--text);
-    background: var(--surface);
+    background: var(--surface-2);
   }
 
   .active {
     color: var(--text);
-    border-color: color-mix(in oklab, var(--accent) 45%, var(--border));
-    background: var(--surface);
+    border-color: color-mix(in oklab, var(--text) 14%, transparent);
+    background: color-mix(in oklab, var(--text) 8%, var(--surface-2));
   }
 
   .contentInner {
@@ -175,6 +192,11 @@ const pageTitle = title ?? currentItem?.title ?? "Docs";
       position: relative;
       top: 0;
       height: auto;
+      overflow: visible;
+    }
+    .sidebarInner {
+      height: auto;
+      overflow: visible;
     }
   }
 </style>

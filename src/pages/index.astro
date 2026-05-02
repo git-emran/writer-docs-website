@@ -6,18 +6,14 @@ import { siteConfig } from "@/lib/site";
 <SiteLayout title="Local-first Markdown notes">
   <section class="hero">
     <div class="container inner">
-      <div class="pill muted">
-        <span>Desktop app · Electron + React + TypeScript</span>
-        <span aria-hidden="true">•</span>
-        <span>Notes are real files</span>
-      </div>
+      <div class="eyebrow">Our perfect-fit</div>
 
-      <h1>
+      <h1 class="display">
         Local-first Markdown notes with Obsidian-like editing, plus Canvas, Kanban, and an embedded
         Terminal.
       </h1>
 
-      <p class="muted sub">
+      <p class="lead">
         Writr keeps your notes as plain files under <code>~/Writr</code>. Write fast with Live
         Preview, preview or export to PDF, and organize work without leaving your notes workspace.
       </p>
@@ -44,9 +40,14 @@ import { siteConfig } from "@/lib/site";
   </section>
 
   <section class="container section">
-    <h2 class="sectionTitle">Why Writr</h2>
+    <div class="sectionHead">
+      <div>
+        <div class="eyebrow">What drives us</div>
+        <h2 class="headline">Why Writr</h2>
+      </div>
+    </div>
     <div class="prose">
-      <p class="muted">
+      <p class="lead">
         Writr is a lightweight desktop Markdown app that stores notes as plain files under
         <code>~/Writr</code>. The editor is optimized for fast writing: Live Preview renders Markdown
         inline when you move away from a line, while keeping the line you’re editing as raw text.
@@ -61,57 +62,59 @@ import { siteConfig } from "@/lib/site";
   </section>
 
   <section class="container section">
-    <h2 class="sectionTitle">Feature highlights</h2>
+    <div class="sectionHead">
+      <div>
+        <div class="eyebrow">Highlights</div>
+        <h2 class="headline">Feature highlights</h2>
+      </div>
+    </div>
     <div class="grid featureList">
       <div class="card">
-        <h3 class="featTitle">
-          <span class="icon" aria-hidden="true">
+        <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
               <path d="M2.75 2.5A1.25 1.25 0 0 0 1.5 3.75v8.5A1.25 1.25 0 0 0 2.75 13.5h10.5A1.25 1.25 0 0 0 14.5 12.25v-6.5A1.25 1.25 0 0 0 13.25 4.5H8.8L7.5 3.1A1.25 1.25 0 0 0 6.6 2.5H2.75Z"/>
             </svg>
-          </span>
-          Editor + Live Preview
-        </h3>
+        </div>
+        <h3 class="cardTitle">Editor + Live Preview</h3>
         <p class="muted small">CodeMirror-based editor with inline rendering behavior inspired by Obsidian.</p>
       </div>
       <div class="card">
-        <h3 class="featTitle">
-          <span class="icon" aria-hidden="true">
+        <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
               <path d="M2.5 3.75A1.25 1.25 0 0 1 3.75 2.5h8.5A1.25 1.25 0 0 1 13.5 3.75v8.5a1.25 1.25 0 0 1-1.25 1.25h-8.5A1.25 1.25 0 0 1 2.5 12.25v-8.5Zm3.25.25a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5ZM5 7.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5A.75.75 0 0 1 5 7.25ZM5.75 9a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z"/>
             </svg>
-          </span>
-          Preview + split view
-        </h3>
+        </div>
+        <h3 class="cardTitle">Preview + split view</h3>
         <p class="muted small">Full preview and side-by-side split view with scroll sync.</p>
       </div>
       <div class="card">
-        <h3 class="featTitle">
-          <span class="icon" aria-hidden="true">
+        <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
               <path d="M2.75 2.5A1.25 1.25 0 0 0 1.5 3.75v8.5A1.25 1.25 0 0 0 2.75 13.5h10.5A1.25 1.25 0 0 0 14.5 12.25v-8.5A1.25 1.25 0 0 0 13.25 2.5H2.75Zm.25 1.25a.25.25 0 0 1 .25-.25h2.5v9H3.25a.25.25 0 0 1-.25-.25v-8.5Zm3.75-.25h6.5a.25.25 0 0 1 .25.25v8.5a.25.25 0 0 1-.25.25h-6.5v-9Z"/>
             </svg>
-          </span>
-          Canvas, Kanban, Terminal
-        </h3>
+        </div>
+        <h3 class="cardTitle">Canvas, Kanban, Terminal</h3>
         <p class="muted small">Canvas files in your vault, Kanban boards in local storage, and a real shell tab.</p>
       </div>
       <div class="card">
-        <h3 class="featTitle">
-          <span class="icon" aria-hidden="true">
+        <div class="icon" aria-hidden="true">
             <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
               <path d="M4.75 1.5A1.25 1.25 0 0 0 3.5 2.75v10.5c0 .69.56 1.25 1.25 1.25h6.5c.69 0 1.25-.56 1.25-1.25V5.75a1.25 1.25 0 0 0-.366-.884L9.634 2.366A1.25 1.25 0 0 0 8.75 2h-4Zm0 1.5h3.5v2.25c0 .69.56 1.25 1.25 1.25H11v6.75a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25V2.75a.25.25 0 0 1 .25-.25Z"/>
             </svg>
-          </span>
-          Export to PDF
-        </h3>
+        </div>
+        <h3 class="cardTitle">Export to PDF</h3>
         <p class="muted small">Export Markdown notes and canvases to PDF.</p>
       </div>
     </div>
   </section>
 
   <section class="container section">
-    <h2 class="sectionTitle">FAQ</h2>
+    <div class="sectionHead">
+      <div>
+        <div class="eyebrow">Questions</div>
+        <h2 class="headline">FAQ</h2>
+      </div>
+    </div>
     <div class="faq">
       <details class="faqItem">
         <summary>Where are my notes stored?</summary>
@@ -154,27 +157,17 @@ import { siteConfig } from "@/lib/site";
 
 <style>
   .hero {
-    padding: 56px 0 10px;
+    padding: clamp(56px, 7vw, 92px) 0 10px;
   }
   .inner {
     display: grid;
-    gap: 16px;
-  }
-  h1 {
-    margin: 0;
-    font-size: clamp(38px, 4.6vw, 54px);
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-  }
-  .sub {
-    max-width: 70ch;
-    font-size: 16px;
+    gap: 18px;
   }
   .cta {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    margin-top: 4px;
+    margin-top: 6px;
   }
   .heroMedia {
     margin: 14px 0 0;
@@ -182,9 +175,10 @@ import { siteConfig } from "@/lib/site";
   .media {
     border-radius: var(--radius);
     border: 1px solid var(--border);
-    background: var(--surface);
+    background: var(--surface-2);
     overflow: hidden;
     aspect-ratio: 16 / 10;
+    box-shadow: var(--shadow);
   }
   .heroMedia img {
     width: 100%;
@@ -197,22 +191,27 @@ import { siteConfig } from "@/lib/site";
     margin-top: 10px;
     font-size: 13px;
   }
-  .section {
-    padding: 32px 0 0;
-  }
-  .sectionTitle {
-    font-size: 22px;
-    margin: 0 0 14px;
-  }
   .prose {
     max-width: 80ch;
+    display: grid;
+    gap: 12px;
   }
   .prose ul {
-    margin: 12px 0 0;
+    margin: 0;
     padding-left: 18px;
+  }
+  .sectionHead {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 14px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 26px;
   }
   .featureList {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
   .faq {
     max-width: 80ch;
@@ -221,16 +220,17 @@ import { siteConfig } from "@/lib/site";
   }
   .faqItem {
     border: 1px solid var(--border);
-    border-radius: 12px;
-    background: var(--surface);
-    padding: 10px 12px;
+    border-radius: 16px;
+    background: var(--surface-2);
+    padding: 12px 14px;
+    box-shadow: var(--shadow-sm);
   }
   summary {
     cursor: pointer;
     list-style: none;
-    font-size: 13.5px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-size: 14px;
+    font-weight: 750;
+    letter-spacing: -0.02em;
   }
   summary::-webkit-details-marker {
     display: none;
@@ -238,13 +238,11 @@ import { siteConfig } from "@/lib/site";
   .faqBody {
     margin-top: 8px;
   }
-  .featTitle {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 0 6px;
-    font-size: 14px;
-    letter-spacing: -0.01em;
+  .cardTitle {
+    margin: 12px 0 6px;
+    font-size: 16px;
+    font-weight: 820;
+    letter-spacing: -0.02em;
   }
   .icon {
     width: 22px;
@@ -252,20 +250,10 @@ import { siteConfig } from "@/lib/site";
     display: grid;
     place-items: center;
     border: 1px solid var(--border);
-    border-radius: 8px;
-    background: var(--surface-2);
-    color: var(--muted);
+    border-radius: 10px;
+    background: color-mix(in oklab, var(--accent) 7%, var(--surface-2));
+    color: color-mix(in oklab, var(--accent) 70%, var(--text));
     flex: 0 0 auto;
-  }
-  .small {
-    font-size: 13px;
-    line-height: 1.45;
-    margin: 0;
-  }
-  .tiny {
-    font-size: 12.5px;
-    line-height: 1.45;
-    margin: 6px 0 0;
   }
   .privacy ul {
     margin: 10px 0 0;

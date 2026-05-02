@@ -3,21 +3,16 @@ import SiteLayout from "@/layouts/SiteLayout.astro";
 ---
 
 <SiteLayout title="About">
-  <div class="container page">
-    <h1>About</h1>
-    <p class="muted">
-      Placeholder content. Add the product story, team, and mission here.
-    </p>
-  </div>
+  <section class="container section page">
+    <div class="eyebrow">Company</div>
+    <h1 class="headline">About</h1>
+    <p class="lead">Placeholder content. Add the product story, team, and mission here.</p>
+  </section>
 </SiteLayout>
 
 <style>
   .page {
-    padding: 40px 0;
-  }
-  h1 {
-    margin: 0 0 10px;
-    font-size: 34px;
+    display: grid;
+    gap: 14px;
   }
 </style>
-

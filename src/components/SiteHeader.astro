@@ -28,27 +28,28 @@ const nav = [
     top: 0;
     z-index: 30;
     border-bottom: 1px solid var(--border);
-    background: var(--surface);
+    background: color-mix(in oklab, var(--surface-2) 88%, transparent);
+    backdrop-filter: blur(10px);
   }
   .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
+    height: 72px;
   }
   .brand {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-weight: 800;
-    letter-spacing: 0.2px;
+    font-weight: 850;
+    letter-spacing: -0.02em;
   }
   .logo {
     width: 28px;
     height: 28px;
     border-radius: 8px;
     border: 1px solid var(--border);
-    background: var(--surface);
+    background: var(--surface-2);
   }
   .nav {
     display: flex;
@@ -57,13 +58,13 @@ const nav = [
   }
   .navLink {
     color: var(--muted);
-    font-weight: 600;
+    font-weight: 750;
     padding: 8px 10px;
-    border-radius: 10px;
+    border-radius: 999px;
   }
   .navLink:hover {
     color: var(--text);
-    background: var(--surface-2);
+    background: color-mix(in oklab, var(--surface) 92%, transparent);
   }
   @media (max-width: 560px) {
     .nav {
