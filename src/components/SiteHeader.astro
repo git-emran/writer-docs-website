@@ -1,19 +1,15 @@
 ---
-const nav = [
-  { label: "Docs", href: "/docs" },
-  { label: "About", href: "/about" },
-  { label: "Changelog", href: "/changelog" }
-];
+import { primaryNavLinks } from "@/lib/navigation";
 ---
 
 <header class="header">
   <div class="container inner">
     <a class="brand" href="/">
-      <img class="logo" src="/icon.png" width="28" height="28" alt="Writr" />
-      <span>Writr</span>
+      <img class="logo" src="/icon.png" width="28" height="28" alt="Writer" />
+      <span>Writer</span>
     </a>
     <nav class="nav" aria-label="Primary">
-      {nav.map((item) => (
+      {primaryNavLinks.map((item) => (
         <a class="navLink" href={item.href}>
           {item.label}
         </a>

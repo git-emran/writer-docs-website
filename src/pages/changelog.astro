@@ -6,13 +6,118 @@ import SiteLayout from "@/layouts/SiteLayout.astro";
   <section class="container section page">
     <div class="eyebrow">Updates</div>
     <h1 class="headline">Changelog</h1>
-    <p class="lead">Placeholder content. Publish release notes and dates here.</p>
+    <p class="lead">Track the latest Writer releases, feature updates, and product improvements.</p>
+
+    <article class="release card">
+      <div class="releaseHeader">
+        <div>
+          <p class="versionLabel">Latest release</p>
+          <h2>Writer 2.02</h2>
+        </div>
+        <a
+          class="tag"
+          href="https://github.com/git-emran/simple-notes/releases/tag/ui-update"
+          target="_blank"
+          rel="noreferrer"
+        >
+          ui-update
+        </a>
+      </div>
+
+      <p class="meta">
+        Released by <a href="https://github.com/git-emran" target="_blank" rel="noreferrer">@git-emran</a>
+        two weeks ago. Commit <code>fe72329</code>.
+      </p>
+
+      <div class="releaseSection">
+        <h3>Auto-updates</h3>
+        <ul>
+          <li>Implemented rolling auto-updates with background download progress indicators.</li>
+          <li>Added dynamic release notes visual modals.</li>
+        </ul>
+      </div>
+
+      <div class="releaseSection">
+        <h3>Obsidian-style table editing</h3>
+        <ul>
+          <li>
+            Added interactive tables with cell tab navigation, auto-formatting, and folding elements.
+          </li>
+        </ul>
+      </div>
+
+      <div class="releaseSection">
+        <h3>Nested folder scaling</h3>
+        <ul>
+          <li>Tree view icons now scale dynamically by depth to save space.</li>
+        </ul>
+      </div>
+    </article>
   </section>
 </SiteLayout>
 
 <style>
   .page {
     display: grid;
-    gap: 14px;
+    gap: 18px;
+  }
+  .release {
+    display: grid;
+    gap: 20px;
+    margin-top: 12px;
+  }
+  .releaseHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .releaseHeader h2 {
+    margin: 2px 0 0;
+    font-size: clamp(26px, 2.8vw, 38px);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+  .versionLabel {
+    margin: 0;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 7px 11px;
+    color: var(--accent);
+    background: color-mix(in oklab, var(--accent) 8%, var(--surface-2));
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .meta {
+    margin: 0;
+    color: var(--muted);
+  }
+  .meta a {
+    color: var(--text);
+    font-weight: 650;
+  }
+  .releaseSection {
+    display: grid;
+    gap: 8px;
+  }
+  .releaseSection h3 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+  .releaseSection ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--muted);
   }
 </style>

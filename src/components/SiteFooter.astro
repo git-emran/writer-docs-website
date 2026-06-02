@@ -1,4 +1,5 @@
 ---
+import { primaryNavLinks } from "@/lib/navigation";
 import { siteConfig } from "@/lib/site";
 ---
 
@@ -9,10 +10,9 @@ import { siteConfig } from "@/lib/site";
       <div class="muted">Local-first notes. Your files, your machine.</div>
     </div>
     <div class="right">
-      <a class="muted" href="/docs">Docs</a>
-      <a class="muted" href="/about">About</a>
-      <a class="muted" href="/changelog">Changelog</a>
-      <a class="muted" href={siteConfig.repoUrl} target="_blank" rel="noreferrer">Repo</a>
+      {primaryNavLinks.map((item) => (
+        <a class="muted" href={item.href}>{item.label}</a>
+      ))}
     </div>
   </div>
 </footer>

@@ -110,7 +110,7 @@ pre {
   font-size: var(--fs-h1);
   line-height: var(--lh-tight);
   letter-spacing: var(--tracking-tight);
-  font-weight: 850;
+  font-weight: 500;
 }
 
 .headline {

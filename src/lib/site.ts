@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Writr",
+  name: "Writer",
   description:
-    "Local-first Markdown notes with Obsidian-like editing, plus Canvas, Kanban, and an embedded Terminal.",
+    "Local-first Markdown notes with Intuitive editing, freeform Canvas, Kanban board, and an embedded Terminal.",
   url: "https://writr.app",
   repoUrl: "https://github.com/your-org/writr",
-  downloadUrl: "#",
+  downloadUrl: "https://github.com/git-emran/simple-notes/releases/tag/ui-update",
   ogImagePath: "/og.svg",
 };

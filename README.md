@@ -1,6 +1,6 @@
-# Writr Website
+# Writer Website
 
-Static, SEO-friendly marketing site + documentation for **Writr** (local-first Markdown notes app).
+Static, SEO-friendly marketing site + documentation for **Writer** (local-first Markdown notes app).
 
 ## Develop
 
