@@ -28,7 +28,7 @@ import { siteConfig } from "@/lib/site";
           <img
             src="/assets/hero.png"
             width="1600"
-            height="1000"
+            height="1400"
             loading="eager"
             decoding="async"
             alt="Writer editor showing file explorer and Markdown content"
@@ -104,8 +104,8 @@ import { siteConfig } from "@/lib/site";
               <path d="M4.75 1.5A1.25 1.25 0 0 0 3.5 2.75v10.5c0 .69.56 1.25 1.25 1.25h6.5c.69 0 1.25-.56 1.25-1.25V5.75a1.25 1.25 0 0 0-.366-.884L9.634 2.366A1.25 1.25 0 0 0 8.75 2h-4Zm0 1.5h3.5v2.25c0 .69.56 1.25 1.25 1.25H11v6.75a.25.25 0 0 1-.25.25h-6.5a.25.25 0 0 1-.25-.25V2.75a.25.25 0 0 1 .25-.25Z"/>
             </svg>
         </div>
-        <h3 class="cardTitle">Export to PDF</h3>
-        <p class="muted small">Export Markdown notes and canvases to PDF.</p>
+        <h3 class="cardTitle">Export to PDF & CSV</h3>
+        <p class="muted small">Export Markdown notes canvases to PDF and Spreadsheets to CSV.</p>
       </div>
     </div>
   </section>
@@ -125,18 +125,18 @@ import { siteConfig } from "@/lib/site";
       <details class="faqItem">
         <summary>Is there any cloud sync?</summary>
         <div class="faqBody muted tiny">
-          No forced cloud. Use iCloud/Dropbox/Git/your preferred sync if you want.
+          No forced cloud. Use iCloud/Dropbox/Git/your preferred sync if you want. Since there is a single folder that the app uses as a vault, it is easier to version control your notes.
         </div>
       </details>
       <details class="faqItem">
         <summary>Does it run on Windows/Linux?</summary>
         <div class="faqBody muted tiny">
-          Currently distributed as macOS-only, but build scripts exist for other platforms.
+          Currently distributed for macOS and Linux, but anyone can build the app in their windows machine.
         </div>
       </details>
       <details class="faqItem">
         <summary>Can I export to PDF?</summary>
-        <div class="faqBody muted tiny">Yes—export notes and canvases to PDF.</div>
+        <div class="faqBody muted tiny">Yes, you can easily export notes and canvases to PDF and even spreadsheets to CSV files.</div>
       </details>
     </div>
   </section>
@@ -178,6 +178,7 @@ import { siteConfig } from "@/lib/site";
     border-radius: var(--radius);
     border: 1px solid var(--border);
     background: var(--surface-2);
+    width: fit-content,
     overflow: hidden;
     aspect-ratio: 16 / 10;
     box-shadow: var(--shadow);
@@ -185,7 +186,7 @@ import { siteConfig } from "@/lib/site";
   .heroMedia img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center top;
     display: block;
   }
