@@ -1,25 +1,24 @@
 ---
 import DocsLayout from "@/layouts/DocsLayout.astro";
+import heroImg from "@/assets/hero.png"
+import { Code } from 'astro-expressive-code/components'
 ---
 
 <DocsLayout title="Installation">
   <h1>Installation</h1>
-  <p class="muted">
-    Writer is currently distributed as macOS-only. The repository includes build scripts for Windows/Linux.
-  </p>
+    <p class="muted">
+    Writer is cross-plaform. The repository <a href="https://github.com/git-emran/simple-notes">Github</a> includes build scripts for macOS/Windows/Linux.
+    </p>
 
-  <h2>macOS</h2>
-  <ul>
-    <li>Download the latest macOS build.</li>
-    <li>Open Writer and allow permissions if prompted.</li>
-    <li>Your default notes vault is created at <code>~/Writer</code>.</li>
-  </ul>
+  <Code code={`git clone github.com/git-emran/simple-notes.git`} lang="bash"/>
 
-  <h2>Build from source</h2>
-  <p class="muted">If you prefer building locally (or on other platforms), use the contributor docs:</p>
-  <ul>
-    <li><a href="/docs/developer/run-locally">Run locally</a></li>
-    <li><a href="/docs/developer/architecture">Architecture overview</a></li>
-  </ul>
+  <h2>Step 1: Install Dependencies</h2>
+    <p>If You are using `npm` or `yarn` run npm or yarn install </p>
+    <Code code={`npm install`} lang="bash"/>
+
+  <h2>Step 2: Build script</h2>
+    <p>To build run the following command:</p>
+    <Code code={`npm run build`} lang="bash"/>
+    <p>To get an executable run the following command, which is available on the `dist` folder.</p>
+    <Code code={`npm run package:mac`} lang="bash"/>
 </DocsLayout>
-
